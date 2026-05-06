@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Norrplex Demo — Testa vår AI-webbassistent live</title>
+<meta name="description" content="Testa Norrplex webchat live. En fristående AI-webbassistent som svarar från era egna dokument — utan integration och utan persondata.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Lottie web component -->
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="https://norrplex.se" class="logo">
+      <span class="logo-norr">Norr</span><span class="logo-plex">plex</span>
+      <span class="logo-tag">demo</span>
+    </a>
+    <a href="https://norrplex.se" class="nav-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Tillbaka till norrplex.se
+    </a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="container hero-container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span class="hero-badge-text">Live demo · Aktiv just nu</span>
+      </div>
+      <h1>
+        Testa Norrplex<br>
+        <span class="rotating-text-inner">webchat live</span>
+      </h1>
+      <p class="hero-sub">
+        Detta är en testmiljö för Norrplex webchat — kopplad till en demo-tenant
+        med riktiga dokument. Skriv en fråga i chatten i nedre högra hörnet för
+        att se assistenten i arbete.
+      </p>
+      <div class="hero-actions">
+        <a href="#explain" class="btn-primary">Hur det fungerar →</a>
+        <a href="https://norrplex.se" class="btn-secondary">Boka egen demo</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="lottie-wrap">
+        <dotlottie-wc
+          src="https://lottie.host/aaa892f4-4313-495e-bc9e-a60c18943c6f/aS4MBCh3BH.lottie"
+          autoplay
+          loop>
+        </dotlottie-wc>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <a href="#explain" class="scroll-hint" aria-label="Scrolla ner">
+    <span></span>
+  </a>
+</section>
+
+<!-- ─── EXPLAIN ─── -->
+<section class="explain" id="explain">
+  <div class="container">
+    <div class="explain-header reveal">
+      <p class="section-label">Vad du testar</p>
+      <h2 class="section-title">En riktig webbassistent — inte en mock</h2>
+      <p class="section-sub">
+        Webchatten du ser nere till höger är samma produkt vi levererar till våra kunder.
+        Den har laddats med ett urval demodokument och svarar enbart utifrån dem.
+      </p>
+    </div>
+
+    <div class="features-grid reveal reveal-stagger">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Svarar från dokument</h3>
+        <p>Assistenten läser policyer, regler och handböcker och svarar enbart baserat på det godkända innehållet — ingen improvisation.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <h3>GDPR-säkrad</h3>
+        <p>Ingen persondata behandlas, ingen inloggning, inga cookies. All data lagras inom EU och kommunikationen är krypterad.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Igång på en dag</h3>
+        <p>Skicka era dokument, vi konfigurerar, ni lägger in en kodsnutt på er sajt. Inga integrationer mot ärendesystem eller CRM.</p>
+      </div>
+    </div>
+
+    <div class="hint-card reveal">
+      <div class="hint-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+      <div class="hint-text">
+        <strong>Testa direkt:</strong> Klicka på chatt-ikonen nere till höger. Prova frågor som
+        ni själva skulle ställa till en kundservice — assistenten kommer antingen svara med
+        källhänvisning eller säga "jag vet inte" om svaret saknas i dokumenten.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card reveal">
+      <p class="section-label">Övertygad?</p>
+      <h2 class="section-title">Vill ni ha en egen webchat<br>tränad på era dokument?</h2>
+      <p>Boka en kostnadsfri demo så visar vi hur Norrplex kan se ut för just er organisation.</p>
+      <a href="https://norrplex.se/#contact-info" class="btn-primary">Boka demo →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <a href="https://norrplex.se" class="logo">
+        <span class="logo-norr">Norr</span><span class="logo-plex">plex</span>
+      </a>
+      <span class="footer-meta">
+        © 2026 Norrplex AB · Skellefteå · Org.nr 559577-1295
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ─────────────────────────────────────────────
+     WIDGET EMBED — Klistra in din widget-snippet här
+     ───────────────────────────────────────────── -->
+<!--
+<script src="https://norrplex-widget.pages.dev/widget.js" data-widget-key="DIN-DEMO-TENANT-NYCKEL"></script>
+-->
+
+<script>
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
